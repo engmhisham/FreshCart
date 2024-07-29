@@ -1,0 +1,14 @@
+.page-link {
+  color: var(--main-color);
+  background-color: transparent;
+  border: var(--bs-pagination-border-width) solid var(--main-color);
+}
+.page-link:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.page-link:focus {
+  background-color: var(--main-color);
+  color: #fff;
+  box-shadow: none;
+}

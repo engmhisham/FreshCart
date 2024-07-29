@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --text-color-main: #21313c;
+  --text-color-main-alt: #5c6c75;
+
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+
+  --rating-color: #ffc908;
+  --main-color-alt: #0ad10a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:focus-visible {
+  outline: none;
+}
+.form-select:focus {
+  border-color: var(--main-color);
+  box-shadow: none;
+}
+
+::selection {
+  color: var(--light-color);
+  background: var(--main-color);
+}
+body {
+  font-family: var(--font-family) !important;
+  color: var(--text-color-main-alt);
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.text-color {
+  color: var(--text-color-main-alt);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-dark {
+  background-color: var(--text-color-main) !important;
+}
+.bg-main-alt {
+  background-color: var(--main-color-alt) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.title-main {
+  color: var(--text-color-main);
+}
+.offline {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 3px;
+  color: #fff;
+  z-index: 2000;
+
+  /*  right: 5%;
+  bottom: 5%; 
+  border-radius: 20px;
+  padding: 10px 50px;*/
+  /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #85d685;
+  box-shadow: 0 0 0 0.25rem rgba(10, 173, 10, 0.25);
+  color: #21313c;
+  outline: 0;
 }

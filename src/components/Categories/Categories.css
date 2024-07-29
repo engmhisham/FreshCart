@@ -1,0 +1,12 @@
+.categories .category {
+  border: solid 1px transparent;
+}
+.categories .category:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--main-color);
+}
+.categories .category img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

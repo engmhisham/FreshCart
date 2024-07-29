@@ -1,0 +1,7 @@
+.brands .brand {
+  border: solid 1px transparent;
+}
+.brands .brand:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--main-color);
+}

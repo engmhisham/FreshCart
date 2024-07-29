@@ -1,0 +1,26 @@
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .cart-icon,
+.navbar .wish-icon,
+.navbar .user-icon {
+  font-size: 20px;
+}
+
+/* .navbar .nav-link.active {
+  color: var(--main-color);
+} */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.nav-item {
+  width: fit-content;
+}
+
+.nav-link:focus-visible {
+  box-shadow: none;
+}
